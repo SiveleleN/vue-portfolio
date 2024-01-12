@@ -1,0 +1,126 @@
+{ " data":[
+    {
+    "education":[
+
+           {
+            "id": 1,
+            "institution": "Luvumelwano SSS",
+            "grades": "Matric",
+            "year": "2016",
+            "img_url": "https://cdn-thumbs.imagevenue.com/df/c9/4b/ME17GJEB_t.png"
+            
+
+        },
+         {
+         "id":2,
+         "institution":"Life Choice Academy",
+         "year":"2023",
+         "img_url":"https://cdn-thumbs.imagevenue.com/df/c9/4b/ME17GJEB_t.png"
+        }
+    ],
+
+    "skills": [
+        {
+            "id": 1,
+            "type": "Experience",
+            "name": "Capfin SA Pty Ltd",
+            "description": "Customer Service Consultant",
+            "img_url": "https://cdn-thumbs.imagevenue.com/da/f2/51/ME17GJEC_t.png"
+        },
+        {
+            "id": 2,
+            "type": "Skills",
+            "description": "",
+            "img_url": "https://cdn-thumbs.imagevenue.com/bc/0a/36/ME17GJEA_t.png"
+        },
+        {
+            "id": 3,
+            "type": "Curriculum Vitae",
+            "url": "",
+            "img_url": "https://cdn-thumbs.imagevenue.com/5a/53/4c/ME17GJE9_t.png"
+        }
+    ]
+    }
+    ,
+     {
+    
+    "project": [
+        {
+            "id": 1,
+            "projectName": "Netflix",
+            "url": "",
+            "img_url": "https://live.staticflickr.com/65535/53456100372_03cae3f1d7_m.jpg"
+        },
+        {
+            "id": 2,
+            "projectName": "e-commerce",
+            "url": "",
+            "img_url": "https://live.staticflickr.com/65535/53456995726_748a1d3f88_m.jpg"
+        },
+        {
+            "id": 3,
+            "projectName": "keyboard",
+            "url": "",
+            "img_url": "https://cdn-thumbs.imagevenue.com/c2/a4/74/ME17GJIP_t.png"
+        },
+        {
+            "id": 4,
+            "projectName": "bmi-calculator",
+            "url": "",
+            "img_url": "https://live.staticflickr.com/65535/53457430375_693e896e29_m.jpg"
+        },
+        {
+            "id": 5,
+            "projectName": "to-do-list",
+            "url": "",
+            "img_url": "https://live.staticflickr.com/65535/53457007766_78df44d2c8_m.jpg"
+        },
+        {
+            "id": 6,
+            "projectName": "calculator",
+            "url": "",
+            "img_url": "https://cdn-thumbs.imagevenue.com/38/26/8c/ME17GJIQ_t.png"
+        }
+    ]},
+    {
+    "review": [
+        {
+            "id": 1,
+            "name": "Onika Sileku ",
+            "img_url": "https://cdn-thumbs.imagevenue.com/68/25/46/ME17GJAY_t.jpg",
+            "description": "Sivelele's relentless passion for software development is truly admirable. Her unwavering commitment to refining her skills and becoming proficient in various coding languages is incredibly inspiring. She tackles tasks with a unique creative perspective, combining a sharp eye for both design and functionality.  Her dedicated approach serves as a beacon for those seeking to master the craft of software development."
+        },
+        {
+            "id": 2,
+            "name": "Seth Tobias",
+            "img_url": "https://cdn-thumbs.imagevenue.com/4c/ab/46/ME17GJCD_t.jpg",
+            "description": " Sivelele is an amazingly hardworking individual. She puts her all into the task at hand. She often loses her temper due to frustration. However she doesnt let it stop her from completing the task at hand. It also showcases how much passion she has to complete the tasks she set her mind on.  Outside of work Sivelele is a very friendly and is easy to talk to.  Sivelele would be an amazing asset to any organization."
+        },
+        {
+            "id": 3,
+            "name": "Candice Amon",
+            "img_url": "https://cdn-thumbs.imagevenue.com/43/43/fa/ME17GJCN_t.png",
+            "description": "Working with Sivelele she consistently demonstrated a remarkable sense of humor that lightened the mood during challenging projects. She always approached her work with unwavering dedication, ensuring that every task was completed to the highest standard. One aspect that truly stood out about Sivelele was her honesty. She was never afraid to speak up. It was refreshing to work with someone who took ownership of their work and had the perseverance to overcome obstacles.Sivelele's commitment to personal and professional development was evident in her continuous growth. She consistently sought out opportunities to expand her skillset and knowledge, making her an invaluable asset.In summary, Sivelele sense of humor, dedication, honesty, perseverance, and commitment to growth made her a standout individual. I wholeheartedly recommend Sivelele for any future endeavors, as her positive attitude and exceptional work ethic are sure to bring success wherever she goes. If you require any further information please do not hesitate to contact me."
+        },
+        {
+            "id": 4,
+            "name": "Matthew Dean Brown",
+            "img_url": "https://cdn-thumbs.imagevenue.com/df/d4/28/ME17GJCU_t.png",
+            "description": "Sivelele has left me impressed by her dedication and creativity. She will complete any project she attempts to the best of her ability. Sivelele will always strives to give best."
+        },
+        {
+            "id": 5,
+            "name": "Brandon Roustone",
+            "img_url": "https://cdn-thumbs.imagevenue.com/35/b3/3f/ME17GJAW_t.jpg",
+            "description": "Sivelele's relentless passion for software development is truly admirable. Her unwavering commitment to refining her skills and becoming proficient in various coding languages is incredibly inspiring. She tackles tasks with a unique creative perspective, combining a sharp eye for both design and functionality. Her dedicated approach serves as a beacon for those seeking to master the craft of software development."
+        },
+        {
+            "id": 6,
+            "name":"Tyhiesha Johnson",
+            "img_url": "https://cdn-thumbs.imagevenue.com/3e/53/46/ME17GJAU_t.jpg",
+            "description": "Sivelele, has great spirit when it comes perseverance. She's an amazing leader and team player, while remaining modest and calm. She brings light into our day and helps whenever she can. She'll make a great addition to any team of her choice."
+        }
+    ]
+    }
+]  
+}
