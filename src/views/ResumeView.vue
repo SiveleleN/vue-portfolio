@@ -5,22 +5,23 @@
     </div>
     <div class="alli">
       <h2>Education</h2>
-      <div class="card-container" v-if="$store.state.ResumeData.length > 0">
-        <div v-for="edu in $store.state.ResumeData[0].education" :key="edu.Id" class="card">
+      <div class="card-container" v-for="edu in education" :key="edu.id">
+        <div class="card">
           <div class="card-icon">
-            :mortar_board:
+            <i class="fas fa-graduation-cap"></i>
           </div>
           <div class="card-content1">
-            <p>{{ edu.institution}}</p>
-            <p>{{ edu.grade}}</p>
+            <p>{{ edu.institution }}</p>
+            <p>{{ edu.grade }}</p>
             <p>{{ edu.year }}</p>
           </div>
         </div>
       </div>
       <h2>Skills</h2>
-      <div class="skills-container" v-if="$store.state.ResumeData.length > 1">
-        <div v-for="skill in $store.state.ResumeData[1].skills" :key="skill.Id" class="card skill-card">
+      <div class="skills-container" v-for="skill in skill" :key="skill.id">
+        <div class="card skill-card">
           <div class="card-content">
+            <!-- Make sure skill.url is a valid URL or provide a default image -->
             <img :src="skill.url" class="skill-image" />
             <p class="skill-name">{{ skill.skillName }}</p>
           </div>
@@ -34,6 +35,7 @@
     </div>
   </div>
 </template>
+
 <script>
 export default {
   data() {
@@ -42,27 +44,20 @@ export default {
     };
   },
   computed: {
-    resume() {
-      return this.$store.state.ResumeData;
+    education() {
+      return this.$store.state.education;
     },
+    skill() {
+      return this.$store.state.skill;
+    }
   },
   mounted() {
-    this.fetchDataresume().then(() => {
-      setTimeout(() => {
-        this.loading = false;
-      }, 1000);
-    }).catch((error) => {
-      console.error('Error fetching data:', error);
-      this.loading = false;
-    });
-  },
-  methods: {
-    fetchDataresume() {
-      return this.$store.dispatch('fetchData');
-    },
-  },
+    this.$store.dispatch('fetchDataEducation');
+    this.$store.dispatch('fetchDataSkill');
+  }
 };
 </script>
-<style scoped>
 
+<style scoped>
+/* Add your scoped styles here if needed */
 </style>

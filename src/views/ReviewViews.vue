@@ -2,12 +2,12 @@
   <div>
     <div class="container">
       <div class="row">
-        <div class="col-md-4 mt-3" v-for="reviews in $store.state.ReviewData" :key="reviews.id">
+        <div class=" col-md-4 mt-3" v-for="review in $store.state.review" :key="review">
           <div class="card h-100">
-            <img :src="reviews.img_url" class="card-img-top" id="hey">
+             <img :src="review.img_url" class="card-img-top" id="hey">
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title">{{ reviews.name }}</h5>
-              <p class="card-text flex-grow-1">{{ reviews.description }}</p>
+              <h5 class="card-title">{{ review.name }}</h5>
+              <p class="card-text flex-grow-1">{{ review.description }}</p>
             </div>
           </div>
         </div>
@@ -19,14 +19,12 @@
 <script>
 export default {
   computed: {
-    fetchDataproject() {
-      return this.$store.dispatch('fetchData');
+    reviews() {
+      return this.$store.state.review;
     }
   },
   mounted() {
-    this.fetchDataproject.catch(error => {
-      console.error('Error fetching data:', error);
-    });
+    this.$store.dispatch('fetchDataReview');
   }
 };
 </script>

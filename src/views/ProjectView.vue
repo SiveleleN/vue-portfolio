@@ -2,7 +2,7 @@
   <div>
     <div class="container">
       <div class="row">
-        <div class="col-md-6 col-lg-4" v-for="project in $store.state.ProjectData" :key="project.id">
+        <div class="col-md-6 col-lg-4" v-for="project in $store.state.project" :key="project.id">
           <div class="card-box">
             <div class="card mt-3">
               <img :src="project.img_url" class="card-img-top" id="lol">
@@ -23,15 +23,12 @@
 <script>
 export default {
   computed: {
-    fetchDataresume() {
-      return this.$store.dispatch('fetchData');
+    project() {
+      return this.$store.state.project;
     }
   },
   mounted() {
-    this.fetchDataresume.catch(error => {
-      console.error('Error fetching data:', error);
-    });
-    this.fetchDataresume;
+    this.$store.dispatch('fetchDataProject');
   }
 };
 </script>
