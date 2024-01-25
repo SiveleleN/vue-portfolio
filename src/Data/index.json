@@ -28,13 +28,13 @@
           {
             "id": 2,
             "type": "Skills",
-            "description": "",
+            "description": "Icon 1: HTML, Icon 2: CSS, Icon 3: JavaScript, Icon 4: Vue.js, Icon 5: Git, Icon 6: Photoshop, Icon 7: UI/UX Design, Icon 8: Problem Solving",
             "img_url": "https://cdn-thumbs.imagevenue.com/bc/0a/36/ME17GJEA_t.png"
           },
           {
             "id": 3,
             "type": "Curriculum Vitae",
-            "url": "",
+            "url": "/public/img/icons/sivelele (1).pdf",
             "img_url": "https://cdn-thumbs.imagevenue.com/5a/53/4c/ME17GJE9_t.png"
           }],
     
@@ -44,13 +44,13 @@
             "id": 1,
             "projectName": "Netflix",
             "url": "",
-            "img_url": "https://live.staticflickr.com/65535/53456100372_03cae3f1d7_m.jpg"
+            "img_url": "https://cdn-thumbs.imagevenue.com/ec/81/88/ME17JD30_t.jpg"
           },
           {
             "id": 2,
             "projectName": "e-commerce",
             "url": "",
-            "img_url": "https://live.staticflickr.com/65535/53456995726_748a1d3f88_m.jpg"
+            "img_url": "https://cdn-thumbs.imagevenue.com/1d/00/c3/ME17JD25_t.png"
           },
           {
             "id": 3,
@@ -62,13 +62,13 @@
             "id": 4,
             "projectName": "bmi-calculator",
             "url": "",
-            "img_url": "https://live.staticflickr.com/65535/53457430375_693e896e29_m.jpg"
+            "img_url": "https://cdn-thumbs.imagevenue.com/9b/14/45/ME17JD27_t.png"
           },
           {
             "id": 5,
             "projectName": "to-do-list",
             "url": "",
-            "img_url": "https://live.staticflickr.com/65535/53457007766_78df44d2c8_m.jpg"
+            "img_url": "https://cdn-thumbs.imagevenue.com/90/bf/0e/ME17JD26_t.png"
           },
           {
             "id": 6,
@@ -89,7 +89,7 @@
           {
             "id": 2,
             "name": "Seth Tobias",
-            "img_url": "https://cdn-thumbs.imagevenue.com/4c/ab/46/ME17GJCD_t.jpg",
+            "img_url": "https://cdn-thumbs.imagevenue.com/0b/4d/7f/ME17JE47_t.png",
             "description": "Sivelele is an amazingly hardworking individual. She puts her all into the task at hand. She often loses her temper due to frustration. However, she doesn't let it stop her from completing the task at hand. It also showcases how much passion she has to complete the tasks she set her mind on. Outside of work, Sivelele is a very friendly and is easy to talk to. Sivelele would be an amazing asset to any organization."
           },
           {

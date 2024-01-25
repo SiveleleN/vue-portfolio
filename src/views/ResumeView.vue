@@ -1,16 +1,16 @@
 <template>
   <div>
     <div class="about">
-      <h1>Education and Skills</h1>
     </div>
-    <div class="alli">
+    <div class="row">
       <h2>Education</h2>
-      <div class="card-container" v-for="edu in education" :key="edu.id">
+      <div class="col-md-6 col-lg-4" v-for="edu in education" :key="edu.id">
         <div class="card">
           <div class="card-icon">
             <i class="fas fa-graduation-cap"></i>
           </div>
           <div class="card-content1">
+            <img :src="edu.img_url" class="card-img-top" id="" />
             <p>{{ edu.institution }}</p>
             <p>{{ edu.grade }}</p>
             <p>{{ edu.year }}</p>
@@ -18,12 +18,18 @@
         </div>
       </div>
       <h2>Skills</h2>
-      <div class="skills-container" v-for="skill in skill" :key="skill.id">
-        <div class="card skill-card">
+      <div class="col-md-6 col-lg-3" v-for="skill in skill" :key="skill.id">
+        <div class="row">
           <div class="card-content">
-            <!-- Make sure skill.url is a valid URL or provide a default image -->
-            <img :src="skill.url" class="skill-image" />
+            
+            <img :src="skill.img_url" class="card-img-top" id="" />
             <p class="skill-name">{{ skill.skillName }}</p>
+            <p class="skill-type">{{ skill.type }}</p>
+            <p class="skill-description">{{ skill.description }}</p>
+            <a v-if="skill.type === 'Curriculum Vitae'" :href="skill.url" download>
+               <button class="download-button">Download CV</button>
+           </a>
+
           </div>
         </div>
       </div>
@@ -59,5 +65,82 @@ export default {
 </script>
 
 <style scoped>
-/* Add your scoped styles here if needed */
+
+.about {
+  margin-bottom: 20px;
+}
+
+.card-container {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.card-icon {
+  margin-right: 10px;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.skill-card {
+  width: 200px; /* Set a fixed width for better alignment */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.card-content {
+  padding: 10px;
+  text-align: center;
+}
+
+.skill-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.bounce1,
+.bounce2,
+.bounce3 {
+  width: 15px;
+  height: 15px;
+  background-color: #333;
+  border-radius: 50%;
+  display: inline-block;
+  animation: bounce 0.6s infinite alternate;
+}
+
+.bounce2 {
+  animation-delay: 0.2s;
+}
+
+.bounce3 {
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+  to {
+    transform: translateY(-15px);
+  }
+}
 </style>
+
+

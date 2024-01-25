@@ -37,6 +37,8 @@ export default {
   text-align: center;
   color: #B11226;
   background-color: #F2B995;
+  padding: auto;
+  margin: auto;
 
 }
 

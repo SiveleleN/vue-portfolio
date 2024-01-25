@@ -2,9 +2,9 @@
     <footer>
         <div class="footer-content">
             <div class="icon-container">
-       <a href="https://www.instagram.com/sive_nka?igsh=MWJ4aHF5bWZ4NDlkNw== "><img src="https://live.staticflickr.com/65535/53453833022_c6301d9cff_m.jpg" alt="Instagram"></a>
+       <a href="https://www.instagram.com/sive_nka?igsh=MWJ4aHF5bWZ4NDlkNw== "><img src="https://cdn-thumbs.imagevenue.com/09/61/cb/ME17JEBU_t.png" alt="Instagram"></a>
        <a href="http://www.linkedin.com/in/sivelele-nkamane-10336a271"><img src="https://live.staticflickr.com/65535/53454885638_40667f2564_m.jpg" alt="Linkedin"></a>
-       <a href="http://Wa.me/+27692527573"><img src="https://live.staticflickr.com/65535/53454887013_576965e96d_m.jpg" alt="WhatsApp"></a>
+       <a href="http://Wa.me/+27692527573"><img src="https://cdn-thumbs.imagevenue.com/2e/ac/4f/ME17JEBV_t.png" alt="WhatsApp"></a>
      </div>
             <p> &copy;2024 Sivelele Nkamane's Portifolio.</p>
         </div>

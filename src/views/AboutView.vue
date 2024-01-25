@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-     <img class="profile-image" src="https://live.staticflickr.com/65535/53454990283_2754dfd423_m.jpg" :class="rounded-circle" alt="Your Name" />
+     <img class="profile-image" src="https://cdn-thumbs.imagevenue.com/bf/67/92/ME17JEDC_t.png" :class="rounded-circle" alt="Your Name" />
      <h1>About Me</h1>
      <div class="shadow-none p-3 mb-5 bg-body-tertiary rounded">Greetings! I'm thrilled to welcome you to my about page, where I aim to provide you with an in-depth glimpse into who I am and what drives me in the world of technology. Born on March 31, 1998, I am a Full Stack Developer student Life Choice's Academy with a passion for continuous growth and skill enhancement.</div>
  <div class="shadow-sm p-3 mb-5 bg-body-tertiary rounded">I firmly believe in the philosophy of skill acquisition and development over time, viewing it as the cornerstone of personal and professional evolution. Embarking on this journey has not only shaped my career but has also allowed me to contribute meaningfully to the dynamic landscape of technology. My commitment to ongoing learning is unwavering, and I actively seek opportunities for theoretical study, collaboration with peers, and mentorship to ensure that my knowledge and expertise remain relevant in an ever-evolving environment.</div>

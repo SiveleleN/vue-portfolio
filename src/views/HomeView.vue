@@ -5,7 +5,7 @@
         <div class="text">
           <h1 class="animate">Sivelele Nkamane</h1>
           <div class="pict-text">
-            <img src="https://live.staticflickr.com/65535/53454990283_2754dfd423_m.jpg" alt="">
+            <img src="https://cdn-thumbs.imagevenue.com/bf/67/92/ME17JEDC_t.png" alt="">
           </div>
         </div>
       </div>

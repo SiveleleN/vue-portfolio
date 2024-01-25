@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-md-6 col-lg-4" v-for="project in $store.state.project" :key="project.id">
           <div class="card-box">
-            <div class="card mt-3">
+            <div class="card mt-4">
               <img :src="project.img_url" class="card-img-top" id="lol">
               <div class="card-body">
                 <h5 class="card-title">{{ project.projectName }}</h5>
