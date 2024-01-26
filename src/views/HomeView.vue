@@ -57,7 +57,7 @@ export default {
 
 @keyframes blinking {
   0% {border-right-color: transparent}
-  50% {border-right-color: black}
+  50% {border-right-color: #f2b996}
   100% {border-right-color: transparent}
 }
 

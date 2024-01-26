@@ -9,35 +9,37 @@
           <div class="card-icon">
             <i class="fas fa-graduation-cap"></i>
           </div>
-          <div class="card-content1">
-            <img :src="edu.img_url" class="card-img-top" id="" />
+          <div class="card-content">
+            <img :src="edu.img_url" class="card-img-top" alt="Education Image" />
             <p>{{ edu.institution }}</p>
             <p>{{ edu.grade }}</p>
             <p>{{ edu.year }}</p>
           </div>
         </div>
       </div>
+    </div>
+    <div class="row">
       <h2>Skills</h2>
-      <div class="col-md-6 col-lg-3" v-for="skill in skill" :key="skill.id">
-        <div class="row">
+      <div class="col-md-6 col-lg-4" v-for="skill in skills" :key="skill.id">
+        <div class="card">
           <div class="card-content">
-            
-            <img :src="skill.img_url" class="card-img-top" id="" />
+            <img :src="skill.img_url" class="card-img-top" alt="Skill Image" />
             <p class="skill-name">{{ skill.skillName }}</p>
             <p class="skill-type">{{ skill.type }}</p>
             <p class="skill-description">{{ skill.description }}</p>
             <a v-if="skill.type === 'Curriculum Vitae'" :href="skill.url" download>
-               <button class="download-button">Download CV</button>
-           </a>
+              <button class="download-button">Download CV</button>
+            </a>
 
           </div>
         </div>
       </div>
-      <div v-if="loading" class="spinner">
-        <div class="bounce1"></div>
-        <div class="bounce2"></div>
-        <div class="bounce3"></div>
-      </div>
+    </div>
+    
+    <div v-if="loading" class="spinner">
+      <div class="bounce1"></div>
+      <div class="bounce2"></div>
+      <div class="bounce3"></div>
     </div>
   </div>
 </template>
@@ -53,7 +55,7 @@ export default {
     education() {
       return this.$store.state.education;
     },
-    skill() {
+    skills() {
       return this.$store.state.skill;
     }
   },
@@ -70,9 +72,8 @@ export default {
   margin-bottom: 20px;
 }
 
-.card-container {
-  display: flex;
-  gap: 20px;
+.row {
+  margin-bottom: 20px;
 }
 
 .card {
@@ -97,6 +98,7 @@ export default {
   width: 200px; /* Set a fixed width for better alignment */
   border: 1px solid #ddd;
   border-radius: 8px;
+  height: 150px;
 }
 
 .card-content1 {

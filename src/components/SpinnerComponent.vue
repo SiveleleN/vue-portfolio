@@ -1,48 +1,47 @@
-<template>
-  <div v-if="isLoading" class="spinner-container">
-     <div class="spinner"></div>
-  </div>
+<template >
+   <div>
+       <div v-if="!loaded" class="loader">
+     <div class="loader-spinner"></div>
+   </div>
+   </div>
  </template>
- 
  <script>
  export default {
-  data() {
+   data() {
      return {
-       isLoading: true, 
+       loaded: false
      };
-  },
-  mounted() {
-     this.isLoading = true; 
-  },
- };
+   },
+   mounted() {
+     setTimeout(() => {
+       this.loaded = true;
+     }, 2000);
+   }
+ }
  </script>
- 
- <style scoped>
- .spinner-container {
-  position: relative;
-  z-index: 1000; 
+ <style >
+   .loader {
+ position: fixed;
+ left: 0;
+ top: 0;
+ width: 100%;
+ height: 100%;
+ background-color: rgba(255, 255, 255, 0.9);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ z-index: 3333;
  }
- 
- .spinner {
-  border: 4px solid rgba(205, 92, 92, 0.1);
-  border-top: 4px solid rgba(233, 150, 122, 01);
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  animation: spin 1s linear infinite;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -20px;
-  margin-left: -20px;
+ .loader-spinner {
+ border: 6px double #F40EBE;
+ border-top: 6px solid blanchedalmond;
+ border-radius: 50%;
+ width: 80px;
+ height: 80px;
+ animation: spin 1s ease-in-out infinite;
  }
- 
  @keyframes spin {
-   0% {
-     transform: rotate(0deg);
-  }
-   100% {
-     transform: rotate(360deg);
-  }
+ 0% { transform: rotate(0deg); }
+ 100% { transform: rotate(360deg); }
  }
  </style>
