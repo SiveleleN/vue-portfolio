@@ -33,7 +33,7 @@
  z-index: 3333;
  }
  .loader-spinner {
- border: 6px double #F40EBE;
+ border: 6px double rebeccapurple;
  border-top: 6px solid blanchedalmond;
  border-radius: 50%;
  width: 80px;

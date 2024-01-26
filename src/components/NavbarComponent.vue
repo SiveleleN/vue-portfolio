@@ -49,4 +49,17 @@ nav a {
 nav a.router-link-exact-active {
   color: #634490;
 }
+
+@media (max-width: 400px){
+nav{
+  padding: 21px;
+    margin-left: -25px;
+    position: center;
+    top: 0%;
+    right: 0;
+    background-color: bisque;
+    box-shadow: 5px 5px 20px rgba(245, 40, 145, 0.8);
+    font-size: 14px;
+}
+}
 </style>

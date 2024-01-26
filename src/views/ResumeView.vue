@@ -117,7 +117,7 @@ export default {
   border-radius: 8px;
 }
 
-.spinner {
+/* .spinner {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -133,9 +133,9 @@ export default {
   border-radius: 50%;
   display: inline-block;
   animation: bounce 0.6s infinite alternate;
-}
+} */
 
-.bounce2 {
+/* .bounce2 {
   animation-delay: 0.2s;
 }
 
@@ -147,7 +147,7 @@ export default {
   to {
     transform: translateY(-15px);
   }
-}
+} */
 </style>
 
 
