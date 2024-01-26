@@ -99,6 +99,11 @@ export default {
   border-radius: 8px;
 }
 
+.card-content1 {
+  padding: 10px; /* Adjust padding as needed */
+  text-align: center;
+}
+
 .card-content {
   padding: 10px;
   text-align: center;

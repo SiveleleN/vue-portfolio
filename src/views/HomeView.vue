@@ -10,7 +10,9 @@
         </div>
       </div>
       <div class="row">
-        <h2 class="animate">I am Full Stack Web Developer</h2>
+        <div class="container">
+  <h1 class="typed">I am Full Stack Web Developer</h1>
+</div>
         <p>
           Hello! I am animated to welcome you to my portfolio. I am
           <span class="animate">Sivelele Nkamane</span>,
@@ -33,6 +35,32 @@ export default {
 </script>
 
 <style scoped>
+
+.container{
+  display: inline-block;
+  font-family: "arial";
+  font-size: 24px;
+}
+
+.typed {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid;
+  width: 0;
+  animation: typing 1.5s steps(30, end) forwards, blinking 1s infinite;
+}
+  
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blinking {
+  0% {border-right-color: transparent}
+  50% {border-right-color: black}
+  100% {border-right-color: transparent}
+}
+
 .container {
   display: flex;
 }
@@ -43,25 +71,37 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-
+img{
+  height: 300px;
+}
+h2{
+  font-size: 3rem;
+  text-align: center !important;
+}
 .home {
   text-align: center;
-  padding: 20px;
+  padding: 50px;
   max-width: 1000px;
-  margin: auto;
+  margin: 150px;
 }
-
+/* 
 h1,
 h2,
 p,
 span {
-  margin: 0;
+  margin
+  
+} */
+h1{
+  text-align: center !important;
+  font-size: 2.5rem;
 }
 
 h1,
 h2 {
   color: #ea3b52;
-  text-align: left;
+  /* text-align: left;
+  text-size-adjust: 100px; */
 }
 
 h2 {
@@ -71,6 +111,7 @@ h2 {
 p {
   text-align: right;
 }
+
 
 .CV {
   background-color: #ea3b52;

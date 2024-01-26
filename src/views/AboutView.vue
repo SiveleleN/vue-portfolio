@@ -1,4 +1,5 @@
 <template>
+  
   <div class="about">
      <img class="profile-image" src="https://cdn-thumbs.imagevenue.com/bf/67/92/ME17JEDC_t.png" :class="rounded-circle" alt="Your Name" />
      <h1>About Me</h1>

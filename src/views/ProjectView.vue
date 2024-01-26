@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-md-6 col-lg-4" v-for="project in $store.state.project" :key="project.id">
           <div class="card-box">
-            <div class="card mt-4">
+            <div class="card">
               <img :src="project.img_url" class="card-img-top" id="lol">
               <div class="card-body">
                 <h5 class="card-title">{{ project.projectName }}</h5>
@@ -35,8 +35,15 @@ export default {
 
 <style scoped>
 .card-box {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  
 }
+.card{
+ 
+ width: 300px;
+ height: 300px;
+}
+
 
 @media (max-width: 767.98px) {
   .col-md-6 {
@@ -46,6 +53,7 @@ export default {
 }
 #lol{
   margin: 20%;
-width:50%;  
+width:50%; 
+height: 20%; 
 }
 </style>

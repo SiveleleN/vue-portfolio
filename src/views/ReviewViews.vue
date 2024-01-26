@@ -34,8 +34,8 @@ export default {
 
 .card {
   position: relative;
-  width: 100%;
-  height: 200px;
+  width: 350px;
+  height: 300px;
   background-color: #cc2424;
   border-radius: 10px;
   display: flex;
@@ -65,7 +65,7 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 50px;
+  padding: 0px;
   box-sizing: border-box;
   background-color: #f2f2f2;
   transform: rotateX(-90deg);
