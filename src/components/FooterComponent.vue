@@ -22,19 +22,28 @@
  }
 </script>
 <style>
-  .icon-container{
-     margin-top: 50px;
-     display: flex;
-     justify-content: center;
+  .footer-content {
+    text-align: center;
+    padding: 20px;
+    background-color: bisque; /* Add your preferred background color */
   }
-  .icon-container a{
-     margin: 0 10px;
+
+  .icon-container {
+    margin-top: 20px; /* Adjust as needed */
+    display: flex;
+    justify-content: center;
   }
-  .icon-container img{
-     width: 50px;
-     height: 50px;
+
+  .icon-container a {
+    margin: 0 10px;
   }
-  .text{
-    display: block;
+
+  .icon-container img {
+    width: 50px;
+    height: 50px;
+  }
+
+  p {
+    margin-top: 20px; /* Adjust as needed */
   }
 </style>

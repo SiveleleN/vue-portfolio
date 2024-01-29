@@ -33,7 +33,7 @@
              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
             </iframe>
           <div class="map-info">
-            <p><img src="https://cdn-thumbs.imagevenue.com/6b/ee/b0/ME17GMOB_t.png" alt="address" width="30px" height="20px">: C1028A Siphumelele Street Khayelitsha Cape Town</p>
+            <p><img src="https://cdn-thumbs.imagevenue.com/6b/ee/b0/ME17GMOB_t.png" alt="address" width="30px" height="20px">: Cape Town</p>
             <p><img src="https://cdn-thumbs.imagevenue.com/2d/e1/9e/ME17GMOD_t.png" alt="phone" width="30px" height="20px">: +2 (769) 252-7573</p>
             <p><img src="https://cdn-thumbs.imagevenue.com/c2/64/27/ME17GMOC_t.png" alt="email" width="30px" height="20px">: info@example.com</p>
           </div>

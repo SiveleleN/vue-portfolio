@@ -8,9 +8,9 @@
               <img :src="project.img_url" class="card-img-top" id="lol">
               <div class="card-body">
                 <h5 class="card-title">{{ project.projectName }}</h5>
-                <p class="card-text">{{ project.url }}</p>
-                <a href="" class="btn btn-primary">GitHub</a>
-                <a :href="project.netlifyUrl" class="btn btn-primary">Netlify</a>
+                <!-- <p class="card-text">{{ project.url }}</p> -->
+                <a :href="project.github_url" class="btn btn-primary" target="_blank">GitHub</a>
+                <a :href="project.url" class="btn btn-primary" target="_blank">Netlify</a>
               </div>
             </div>
           </div>

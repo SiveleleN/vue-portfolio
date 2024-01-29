@@ -29,7 +29,7 @@
             "id": 2,
             "type": "Skills",
             "description": " HTML, CSS, JavaScript, Bootstarap, Vue.js, Photoshop, UI/UX Design, Problem Solving",
-            "img_url": "https://cdn-thumbs.imagevenue.com/bc/0a/36/ME17GJEA_t.png"
+            "img_url": "https://cdn-thumbs.imagevenue.com/9f/67/ab/ME17JU8B_t.png"
           },
           {
             "id": 3,
@@ -43,37 +43,43 @@
           {
             "id": 1,
             "projectName": "Netflix",
-            "url": "",
+            "github_url": "https://github.com/SiveleleN/Netflix.git",
+            "url": "https://voluble-panda-b81de2.netlify.app/",
             "img_url": "https://cdn-thumbs.imagevenue.com/ec/81/88/ME17JD30_t.jpg"
           },
           {
             "id": 2,
             "projectName": "e-commerce",
-            "url": "",
+            "github_url": "https://github.com/SiveleleN/e-commerceSite.git",
+            "url":"https://candid-unicorn-aaf34a.netlify.app/",
             "img_url": "https://cdn-thumbs.imagevenue.com/1d/00/c3/ME17JD25_t.png"
           },
           {
             "id": 3,
-            "projectName": "keyboard",
-            "url": "",
-            "img_url": "https://cdn-thumbs.imagevenue.com/c2/a4/74/ME17GJIP_t.png"
+            "projectName": "Temperature",
+            "github_url": "https://github.com/SiveleleN/Temperature-.git",
+            "url":"https://peppy-melba-17c508.netlify.app/",
+            "img_url": "https://cdn-thumbs.imagevenue.com/55/fc/bb/ME17JUKG_t.png"
           },
           {
             "id": 4,
             "projectName": "bmi-calculator",
-            "url": "",
+            "github_url":"",
+            "url": "https://dulcet-scone-2c3a23.netlify.app/",
             "img_url": "https://cdn-thumbs.imagevenue.com/9b/14/45/ME17JD27_t.png"
           },
           {
             "id": 5,
             "projectName": "to-do-list",
-            "url": "",
+            "github_url": "https://github.com/SiveleleN/to-do-list2.git",
+            "url":"https://sage-baklava-eafada.netlify.app/",
             "img_url": "https://cdn-thumbs.imagevenue.com/90/bf/0e/ME17JD26_t.png"
           },
           {
             "id": 6,
             "projectName": "calculator",
-            "url": "",
+            "github_url": "https://github.com/SiveleleN/Calc-and-keyboard.git",
+            "url":"https://thunderous-empanada-e719eb.netlify.app/",
             "img_url": "https://cdn-thumbs.imagevenue.com/38/26/8c/ME17GJIQ_t.png"
           }
         ],

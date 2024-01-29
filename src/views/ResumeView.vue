@@ -23,7 +23,7 @@
       <div class="col-md-6 col-lg-4" v-for="skill in skills" :key="skill.id">
         <div class="card">
           <div class="card-content">
-            <img :src="skill.img_url" class="card-img-top" alt="Skill Image" />
+            <img :src="skill.img_url" class="card-img-top" alt="Skill Image" id="Skill-Image" />
             <p class="skill-name">{{ skill.skillName }}</p>
             <p class="skill-type">{{ skill.type }}</p>
             <p class="skill-description">{{ skill.description }}</p>
@@ -111,9 +111,11 @@ export default {
   text-align: center;
 }
 
-.skill-image {
+#Skill-Image {
   max-width: 100%;
-  height: auto;
+  height: 10rem;
+  /* aspect-ratio: 3/3; */
+  /* object-fit: contain; */
   border-radius: 8px;
 }
 
