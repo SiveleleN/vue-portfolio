@@ -10,7 +10,7 @@
                 <h5 class="card-title">{{ project.projectName }}</h5>
                 <!-- <p class="card-text">{{ project.url }}</p> -->
                 <a :href="project.github_url" class="btn btn-primary" target="_blank">GitHub</a>
-                <a :href="project.url" class="btn btn-primary" target="_blank">Netlify</a>
+                <a :href="project.url" class="btn btn-primary m-2" target="_blank">Netlify</a>
               </div>
             </div>
           </div>

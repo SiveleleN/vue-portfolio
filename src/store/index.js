@@ -26,17 +26,17 @@ export default createStore({
   },
   actions: {
     fetchDataProject(context) {
-      axios.get("http://localhost:3000/project")
+      axios.get("https://sivelelen.github.io/jasonfile/Data/")
         .then((response) => {
-          const projectData = response.data;
+          const projectData = response.data.project;
           console.log(projectData);
           context.commit('setProject', projectData);
         })
     },
     fetchDataReview(context) {
-      axios.get("http://localhost:3000/review")
+      axios.get("https://sivelelen.github.io/jasonfile/Data/")
         .then((response) => {
-          const reviewData = response.data;
+          const reviewData = response.data.review;
           console.log(reviewData);
           context.commit('setReview', reviewData);
         })
@@ -46,17 +46,17 @@ export default createStore({
     },
     
     fetchDataEducation(context) {
-      axios.get("http://localhost:3000/education")
+      axios.get("https://sivelelen.github.io/jasonfile/Data/")
         .then((response) => {
-          const educationData = response.data;
+          const educationData = response.data.education;
           console.log(educationData);
           context.commit('setEducation', educationData);
         })
     },
     fetchDataSkill(context) {
-      axios.get("http://localhost:3000/skill")
+      axios.get("https://sivelelen.github.io/jasonfile/Data/")
         .then((response) => {
-          const skillData = response.data;
+          const skillData = response.data.skill;
           console.log(skillData);
           context.commit('setSkill', skillData);
         })

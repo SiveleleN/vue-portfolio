@@ -37,6 +37,13 @@ export default {
 </script>
 
 <style scoped>
+*{
+  background-color: #f2b995;
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  /* overflow: hidden; */
+}
 
 .container{
   display: inline-block;
@@ -74,7 +81,7 @@ body {
   box-sizing: border-box;
 }
 img{
-  height: 300px;
+  height: 300px !important;
 }
 h2{
   font-size: 3rem;
@@ -102,7 +109,7 @@ h1{
 h1,
 h2 {
   color: #ea3b52;
-  /* text-align: left;
+/* text-align: left;
   text-size-adjust: 100px; */
 }
 
@@ -146,14 +153,16 @@ span {
 
 .lol{
   text-align: center;
+  padding: 2rem;
+  /* border: solid 1px black; */
 }
 
 @media (max-width: 400px){
 img{
-  height: 230px;
+    height: 230px;
     position: relative;
     right: 91px;
-    bottom: 164px 
+    bottom: 164px
 }
 .lol{
   text-align: center;
@@ -174,5 +183,19 @@ img{
     right: 385px;
     bottom: -69px;
 }
+}
+
+
+@media (max-width: 400px) {
+  .lol {
+    font-size: 4em;
+  }
+}
+
+
+.typed{
+  /* border: solid black 1px; */
+  padding: 1rem;
+  text-wrap: wrap;
 }
 </style>
