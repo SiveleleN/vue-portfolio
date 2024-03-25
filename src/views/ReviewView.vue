@@ -1,6 +1,6 @@
 <template>
   <div class="container mt-3">
-    <div class="row">
+    <!-- <div class="row">
       <div class="col-md-4" v-for="review in reviews" :key="review">
         <div class="card">
           <img :src="review.img_url" class="card-img-top" id="hey">
@@ -10,25 +10,25 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script>
-export default {
-  computed: {
-    reviews() {
-      return this.$store.state.review;
-    }
-  },
-  mounted() {
-    this.$store.dispatch('fetchDataReview');
-  }
-};
+// export default {
+//   computed: {
+//     reviews() {
+//       return this.$store.state.review;
+//     }
+//   },
+//   mounted() {
+//     this.$store.dispatch('fetchDataReview');
+//   }
+// };
 </script>
 
 <style scoped>
-.container {
+/* .container {
   max-width: 1200px;
 }
 
@@ -97,5 +97,5 @@ export default {
 #hey{
   height: 100%;
   width: 200px;
-}
+} */
 </style>

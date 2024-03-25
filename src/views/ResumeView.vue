@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="about">
+    <!-- <div class="about">
     </div>
     <div class="row">
       <h2>Education</h2>
@@ -40,35 +40,35 @@
       <div class="bounce1"></div>
       <div class="bounce2"></div>
       <div class="bounce3"></div>
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      loading: true,
-    };
-  },
-  computed: {
-    education() {
-      return this.$store.state.education;
-    },
-    skills() {
-      return this.$store.state.skill;
-    }
-  },
-  mounted() {
-    this.$store.dispatch('fetchDataEducation');
-    this.$store.dispatch('fetchDataSkill');
-  }
-};
+// export default {
+//   data() {
+//     return {
+//       loading: true,
+//     };
+//   },
+//   computed: {
+//     education() {
+//       return this.$store.state.education;
+//     },
+//     skills() {
+//       return this.$store.state.skill;
+//     }
+//   },
+//   mounted() {
+//     this.$store.dispatch('fetchDataEducation');
+//     this.$store.dispatch('fetchDataSkill');
+//   }
+// };
 </script>
 
 <style scoped>
 
-.about {
+/* .about {
   margin-bottom: 20px;
 }
 
@@ -95,14 +95,14 @@ export default {
 }
 
 .skill-card {
-  width: 200px; /* Set a fixed width for better alignment */
+  width: 200px; 
   border: 1px solid #ddd;
   border-radius: 8px;
   height: 150px;
 }
 
 .card-content1 {
-  padding: 10px; /* Adjust padding as needed */
+  padding: 10px; 
   text-align: center;
 }
 
@@ -114,10 +114,8 @@ export default {
 #Skill-Image {
   max-width: 100%;
   height: 10rem;
-  /* aspect-ratio: 3/3; */
-  /* object-fit: contain; */
   border-radius: 8px;
-}
+} */
 
 /* .spinner {
   display: flex;

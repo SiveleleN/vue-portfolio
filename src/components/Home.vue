@@ -216,7 +216,6 @@ export default {
 
 <style scoped>
 *{
-
   background-color: #f2b995;
   margin: 0;
   padding: 0;

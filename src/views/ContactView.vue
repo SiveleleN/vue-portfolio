@@ -1,6 +1,6 @@
 <template>
     <div class="row">
-      <div class="col-md-6">
+      <!-- <div class="col-md-6">
         <div class="contact-container">
           <h2>Connect With Me :</h2>
           <div class="form-container">
@@ -38,14 +38,14 @@
             <p><img src="https://cdn-thumbs.imagevenue.com/c2/64/27/ME17GMOC_t.png" alt="email" width="30px" height="20px">: info@example.com</p>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </template>
   <script>
-  export default {};
+  // export default {};
   </script>
   <style scoped>
-  .contact-container {
+  /* .contact-container {
     position: relative;
     text-align: center;
     margin-top: 5px;
@@ -110,5 +110,5 @@
   }
   .btn:hover {
     background-color: #634490;
-  }
+  } */
   </style>
