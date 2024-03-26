@@ -1,6 +1,7 @@
 <template>
-  <div>
-    <!-- <div class="about">
+  <div class="parallax-container">
+    <div class="parallax">
+    <div class="about">
     </div>
     <div class="row">
       <h2>Education</h2>
@@ -40,35 +41,47 @@
       <div class="bounce1"></div>
       <div class="bounce2"></div>
       <div class="bounce3"></div>
-    </div> -->
+    </div>
+  </div>
   </div>
 </template>
 
 <script>
-// export default {
-//   data() {
-//     return {
-//       loading: true,
-//     };
-//   },
-//   computed: {
-//     education() {
-//       return this.$store.state.education;
-//     },
-//     skills() {
-//       return this.$store.state.skill;
-//     }
-//   },
-//   mounted() {
-//     this.$store.dispatch('fetchDataEducation');
-//     this.$store.dispatch('fetchDataSkill');
-//   }
-// };
+export default {
+  data() {
+    return {
+      loading: true,
+    };
+  },
+  computed: {
+    education() {
+      return this.$store.state.education;
+    },
+    skills() {
+      return this.$store.state.skill;
+    }
+  },
+  mounted() {
+    this.$store.dispatch('fetchDataEducation');
+    this.$store.dispatch('fetchDataSkill');
+    window.addEventListener('scroll', this.handleScroll)
+  },
+  destroyed() {
+    window.removeEventListener('scroll', this.handleScroll)
+  },
+  methods: {
+    handleScroll() {
+      const scrollTop = window.pageXOffset;
+      const parallax = this.$el.querySelector('parallax');
+      parallax.style.transform = `translateY(${scrollTop * 0.6}px)`;
+    }
+  }
+};
 </script>
 
 <style scoped>
 
-/* .about {
+.about {
   margin-bottom: 20px;
 }
 
@@ -115,9 +128,9 @@
   max-width: 100%;
   height: 10rem;
   border-radius: 8px;
-} */
+} 
 
-/* .spinner {
+.spinner {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -135,7 +148,7 @@
   animation: bounce 0.6s infinite alternate;
 } */
 
-/* .bounce2 {
+ .bounce2 {
   animation-delay: 0.2s;
 }
 
@@ -147,7 +160,7 @@
   to {
     transform: translateY(-15px);
   }
-} */
+} 
 </style>
 
 

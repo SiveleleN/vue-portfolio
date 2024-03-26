@@ -19,12 +19,13 @@
 import NavbarComponent from './components/NavbarComponent.vue';
 import FooterComponent from './components/FooterComponent.vue';
 import SpinnerComponent from './components/SpinnerComponent.vue';
-
+import ParallaxBackground from './components/ParallaxBackground.vue';
 export default {
   components: {
     NavbarComponent,
     FooterComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    ParallaxBackground,
   }
 }
 </script>
