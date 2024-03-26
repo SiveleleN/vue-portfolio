@@ -1,48 +1,45 @@
 <template>
   <div class="parallax-container">
-    <div class="parallax">
-    <div class="about">
-    </div>
-    <div class="row">
-      <h2>Education</h2>
-      <div class="col-md-6 col-lg-4" v-for="edu in education" :key="edu.id">
-        <div class="card">
-          <div class="card-icon">
-            <i class="fas fa-graduation-cap"></i>
-          </div>
-          <div class="card-content">
-            <img :src="edu.img_url" class="card-img-top" alt="Education Image" />
-            <p>{{ edu.institution }}</p>
-            <p>{{ edu.grade }}</p>
-            <p>{{ edu.year }}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <h2>Skills</h2>
-      <div class="col-md-6 col-lg-4" v-for="skill in skills" :key="skill.id">
-        <div class="card">
-          <div class="card-content">
-            <img :src="skill.img_url" class="card-img-top" alt="Skill Image" id="Skill-Image" />
-            <p class="skill-name">{{ skill.skillName }}</p>
-            <p class="skill-type">{{ skill.type }}</p>
-            <p class="skill-description">{{ skill.description }}</p>
-            <a v-if="skill.type === 'Curriculum Vitae'" :href="skill.url" download>
-              <button class="download-button">Download CV</button>
-            </a>
-
+    <div class="parallax about">
+      <!-- Content inside parallax -->
+      <div class="row">
+        <h2>Education</h2>
+        <div class="col-md-6 col-lg-4" v-for="edu in education" :key="edu.id">
+          <div class="card">
+            <div class="card-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="card-content">
+              <img :src="edu.img_url" class="card-img-top" alt="Education Image" />
+              <p>{{ edu.institution }}</p>
+              <p>{{ edu.grade }}</p>
+              <p>{{ edu.year }}</p>
+            </div>
           </div>
         </div>
       </div>
+      <div class="row">
+        <h2>Skills</h2>
+        <div class="col-md-6 col-lg-4" v-for="skill in skills" :key="skill.id">
+          <div class="card">
+            <div class="card-content">
+              <img :src="skill.img_url" class="card-img-top" alt="Skill Image" id="Skill-Image" />
+              <p class="skill-name">{{ skill.skillName }}</p>
+              <p class="skill-type">{{ skill.type }}</p>
+              <p class="skill-description">{{ skill.description }}</p>
+              <a v-if="skill.type === 'Curriculum Vitae'" :href="skill.url" download>
+                <button class="download-button">Download CV</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div v-if="loading" class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+      </div>
     </div>
-    
-    <div v-if="loading" class="spinner">
-      <div class="bounce1"></div>
-      <div class="bounce2"></div>
-      <div class="bounce3"></div>
-    </div>
-  </div>
   </div>
 </template>
 
@@ -67,12 +64,12 @@ export default {
     window.addEventListener('scroll', this.handleScroll)
   },
   destroyed() {
-    window.removeEventListener('scroll', this.handleScroll)
+    window.removeEventListener('scroll', this.handleScroll);
   },
   methods: {
     handleScroll() {
-      const scrollTop = window.pageXOffset;
-      const parallax = this.$el.querySelector('parallax');
+      const scrollTop = window.pageYOffset;
+      const parallax = this.$el.querySelector('.parallax');
       parallax.style.transform = `translateY(${scrollTop * 0.6}px)`;
     }
   }
