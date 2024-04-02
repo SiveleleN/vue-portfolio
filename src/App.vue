@@ -1,14 +1,14 @@
 <template>
-  <!--
-  <nav>
+  
+  <!-- <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link> |
     <router-link to="/resume">Resume</router-link> |
     <router-link to="/projects">Projects</router-link> |
     <router-link to="/reviews">Reviews</router-link> |
     <router-link to="/contact">Contact</router-link>
-  </nav>
-  -->
+  </nav> -->
+ 
  
   <NavbarComponent />
   <FooterComponent />
@@ -19,13 +19,12 @@
 import NavbarComponent from './components/NavbarComponent.vue';
 import FooterComponent from './components/FooterComponent.vue';
 import SpinnerComponent from './components/SpinnerComponent.vue';
-import ParallaxBackground from './components/ParallaxBackground.vue';
 export default {
   components: {
     NavbarComponent,
     FooterComponent,
     SpinnerComponent,
-    ParallaxBackground,
+    
   }
 }
 </script>

@@ -1,8 +1,6 @@
 <template>
-  <div class="parallax-container">
-    <div class="parallax">
       <div class="about">
-        <img class="profile-image" src="https://cdn-thumbs.imagevenue.com/bf/67/92/ME17JEDC_t.png" :class="rounded-circle" alt="Your Name" />
+        <img class="profile-image" src="https://cdn-thumbs.imagevenue.com/bf/67/92/ME17JEDC_t.png" alt="Your Name" />
         <h1>About Me</h1>
         <div class="shadow-none p-3 mb-5 bg-body-tertiary rounded">
           Greetings! I'm thrilled to welcome you to my about page, where I aim to provide you with an in-depth glimpse into who I am and what drives me in the world of technology. Born on March 31, 1998, I am a Full Stack Developer student Life Choice's Academy with a passion for continuous growth and skill enhancement.
@@ -32,28 +30,14 @@
           <li class="list-group-item">Hiking</li>
           <li class="list-group-item">Watching International Football</li>
         </ul>
-      </div> 
-    </div>
-  </div>
+      </div>
 </template>
 
 <script>
 export default {
-  mounted() {
-    window.addEventListener('scroll', this.handleScroll);
-  },
-  destroyed() {
-    window.removeEventListener('scroll', this.handleScroll);
-  },
-  methods: {
-    handleScroll() {
-      const scrollTop = window.pageYOffset;
-      const parallax = this.$el.querySelector('.parallax');
-      parallax.style.transform = `translateY(${scrollTop * 0.5}px)`;
-    },
-  },
+
 };
-</script>
+
  </script>
  
  <style scoped>

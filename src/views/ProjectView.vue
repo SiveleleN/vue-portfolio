@@ -32,18 +32,8 @@ export default {
   },
   mounted() {
     this.$store.dispatch('fetchDataProject');
-    window.addEventListener('scroll', this.handleScroll);
+    
   },
-  destroyed() {
-    window.removeEventListener('scroll', this.handleScroll);
-  }, 
-  methods: {
-    handleScroll() {
-      const scrollTop = window.pageYOffset;
-      const parallax = this.$el.querySelector('.parallax');
-      parallax.style.transform = `translateY(${scrollTop * 0.5}px)`;
-    },
-  }
 };
 </script>
 

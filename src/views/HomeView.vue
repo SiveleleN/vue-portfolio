@@ -1,6 +1,4 @@
 <template>
-  <div class="parallax-container">
-  <div class="parallax">
     <div class="container">
       <div class="row">
         <div class="text">
@@ -27,8 +25,6 @@
         </div>
       </div>
     </div>
-  </div>
-</div>
 </template>
 
 
@@ -43,34 +39,10 @@ export default {
       loading: true,
     }
   },
-  mounted() {
-    window.addEventListener('stroll', this.handleScroll);
-  },
-  destroyed() {
-    window.removeEventListener('stroll', this.handleScroll);
-  },
-  methods: {
-    handleScroll() {
-      const scrollTop = window.pageYOffset;
-      const parallax = this.$el.querySelector('.parallax');
-      parallax.style.transform = `translateY(${scrollTop * 0.6}px)`;
-    }
-  }
 }
 </script>
 
 <style scoped>
-.parallax-container{
-  height: 500px; /* Adjust height as needed */
-  overflow: hidden;
-}
-.parallax {
-  width: 100%;
-  height: 100%;
-  background-image: url('your-image-url.jpg'); /* Add your background image URL */
-  background-size: cover;
-  background-position: center;
-}
 *{
 
   background-color: #f2b995;
